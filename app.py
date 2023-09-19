@@ -7,7 +7,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 import pinecone
 from langchain.llms import OpenAI
 
-OPENAI_API_KEY= st.secrets['OPENAI_API_KEY'], 
+OPENAI_API_KEY= st.secrets['OPENAI_API_KEY']
 PINECONE_API_ENV = st.secrets['PINECONE_API_ENV']
 PINECONE_API_KEY=st.secrets['PINECONE_API_KEY']
 
