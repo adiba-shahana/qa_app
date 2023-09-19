@@ -1,5 +1,5 @@
 langchain
-pincone-client
+pincone-client==23.2.1
 pypdf
 openai
 tiktoken
