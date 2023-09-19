@@ -11,13 +11,13 @@ OPENAI_API_KEY= st.secrets['OPENAI_API_KEY']
 PINECONE_API_ENV = st.secrets['PINECONE_API_ENV']
 PINECONE_API_KEY=st.secrets['PINECONE_API_KEY']
 
-# Load the PDF document
-#loader = PyPDFLoader('Eat_That_Frog.pdf')
-#data = loader.load()
+#Load the PDF document
+loader = PyPDFLoader('Eat_That_Frog.pdf')
+data = loader.load()
 
 # Split the document into smaller texts
-#text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 2)
-#texts = text_splitter.split_documents(data)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 2)
+texts = text_splitter.split_documents(data)
 
 # creating embeddings
 embeddings = OpenAIEmbeddings(openai_api_key = OPENAI_API_KEY )
