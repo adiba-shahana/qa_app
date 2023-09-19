@@ -12,7 +12,7 @@ PINECONE_API_ENV = st.secrets['PINECONE_API_ENV']
 PINECONE_API_KEY=st.secrets['PINECONE_API_KEY']
 
 # Load the PDF document
-loader = PyPDFLoader(r'C:\Users\az\OneDrive\Desktop\jupterNotebook\qa_app\Eat_That_Frog.pdf')
+loader = PyPDFLoader('Eat_That_Frog.pdf')
 data = loader.load()
 
 # Split the document into smaller texts
